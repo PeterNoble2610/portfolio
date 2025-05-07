@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lunar Water Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f3f8fc;
+      line-height: 1.6;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #cce4f6;
+      padding: 1rem 1.5rem;
+      font-weight: bold;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #b0d3ec;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #004080;
+      margin-left: 0.5rem;
+    }
+
+    .date {
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 2rem 0;
+      gap: 2rem;
+    }
+
+    .column {
+      background-color: #ffffff;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
+    .column h3 {
+      margin-top: 0;
+    }
+
+    .column ul {
+      padding-left: 1rem;
+    }
+
+    .column ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .figure-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .figure-row figure {
+      flex: 1 1 300px;
+      max-width: 650px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .figure-row img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .figure-row figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .figure-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div>
+      LUNAR WATER DETECTOR 
+      <a href="https://github.com/PeterNoble2610/PLWD_2024_2025.git" target="_blank">– Source Code</a>
+    </div>
+    <div class="date">📅 Sep 2024 – May 2025</div>
+  </div>
+
+  <div class="grid">
+    <div class="column">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Identify water on lunar surfaces up to 50ppm.</li>
+        <li>Integrate the detector into the Canadian Space Agency’s PEEKBot Lunar Rover.</li>
+        <li>Use reflective spectrometry to identify water’s characteristic wavelengths.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Contributions</h3>
+      <ul>
+        <li>Optical path simulation using Ansys Zemax.</li>
+        <li>Thermal and LED driver PCB design using Altium.</li>
+        <li>Lens efficiency testing via optical power measurements.</li>
+        <li>MicroPython software for thermal management system.</li>
+        <li>SPI/I2C integration with analog and digital sensors.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Results</h3>
+      <ul>
+        <li>Water successfully detected in 1D and 3D configurations.</li>
+        <li>Machine learning used to enhance data interpretation.</li>
+        <li>Temperature-aware prediction model developed.</li>
+        <li>Low-cost solution for lunar rover science payload.</li>
+        <li>Capstone finalist in Department of Electronics awards.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="figure-row">
+    <figure>
+      <img src="group.png" alt="Group Photo">
+      <figcaption>The PEEKBot Lunar Water Detector team.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="spectrum LED.png" alt="Final Prototype" style="width: 150%; max-height: 350px; object-fit: contain;">
+      <figcaption>Reflective Spectrometry Design Concept.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="collimating.jpg" alt="Final Prototype" style="width: 80%; max-height: 350px; object-fit: contain;">
+      <figcaption>3D printed collimating lens holder used for testing.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="layers.png" alt="Final Prototype" style="width: 90%; max-height: 350px; object-fit: contain;">
+      <figcaption>PCB design layers.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="pcb.png" alt="Final Prototype" style="width: 150%; max-height: 350px; object-fit: contain;">
+      <figcaption>Thermal and Driver PCB.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="simulation.png" alt="Final Prototype" style="width: 90%; max-height: 350px; object-fit: contain;">
+      <figcaption>Optical Path Simulation using Ansys Zemax.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="finaltest.png" alt="Final Prototype" style="width: 80%; max-height: 350px; object-fit: contain;">
+      <figcaption>Final prototype, fully enclosed for field testing.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="machineresult.png" alt="Testing Results 1">
+      <figcaption>Water detection results by concentration and wavelength.</figcaption>
+    </figure>
+
+  
+
+  </div>
+
+  <div class="header">
+    <div>
+      AI Waste Disposal System 
+      <a href="https://github.com/PeterNoble2610/AI_Disposal_System.git" target="_blank">– Source Code</a>
+    </div>
+    <div class="date">📅 Jan 2024 – May 2024</div>
+  </div>
+
+  <div class="grid">
+    <div class="column">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Reduce landfill waste by automating waste sorting into paper, plastic, and garbage.</li>
+        <li>Improve independent living for vulnerable members of society.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Contributions</h3>
+      <ul>
+        <li>Integration of two servo motors with precise timing requirements.</li>
+        <li>Manual mode circuit design.</li>
+        <li>Structural design for trapdoor, inner, and outer platforms.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Results</h3>
+      <ul>
+        <li>Successful creation of a waste disposal system that sorts waste into three distinct categories with an accuracy of 95% after training.</li>
+        <li>Waste sorted within 4 seconds for automated (AI) mode and 3 seconds for manual mode.</li>
+        <li>Ability to sort complex or unknown waste items by implementation of AI training algortihm.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="figure-row">
+    <figure>
+      <img src="bin.png" alt="Final Prototype" style="width: 140%; max-height: 350px; object-fit: contain;">
+      <figcaption>Overview of the Disposal System.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="early.png" alt="Final Prototype" style="width: 150%; max-height: 350px; object-fit: contain;">
+      <figcaption>Early Prototype.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="items.png" alt="Final Prototype" style="width: 140%; max-height: 350px; object-fit: contain;">
+      <figcaption>Item Examples.</figcaption>
+    </figure>
+
+  </div>
+
+  <div class="header">
+    <div>
+      Python Dataset Analyzer 
+      <a href="https://github.com/PeterNoble2610/python_dataset_analyzer.git" target="_blank">– Source Code</a>
+    </div>
+    <div class="date">📅 Jan 2022 – May 2022</div>
+  </div>
+
+  <div class="grid">
+    <div class="column">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Create a digital book library using Python.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Contributions</h3>
+      <ul>
+        <li>Implementing datatypes such as dictionaries and structures to optimize search and store functionality.</li>
+        <li>Designing effective sorting algorithms using bubble, insertion and merge sort.</li>
+        <li>Integration of personal code into the teams overall code structure.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Results</h3>
+      <ul>
+        <li>Successful implementation of digital library. Provides the user with an interactive method of sorting, finding, and removing items from a large book database.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="figure-row">
+    <figure>
+      <img src="py.png" alt="Final Prototype" style="width: 120%; max-height: 350px; object-fit: contain;">
+      <figcaption>Code Snippet for the Remove Book Function.</figcaption>
+    </figure>
+
+  </div>
+
+  <div class="header">
+    <div>
+      MIDI Serial-to-Parallel Reciever
+    </div>
+    <div class="date">📅 Sep 2022 – Jan 2023</div>
+  </div>
+
+  <div class="grid">
+    <div class="column">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Design a serial-to-parallel reciever to transform a 10-bit serial word into an 8-bit parallel byte.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Contributions</h3>
+      <ul>
+        <li>Utlizing Xilinx ISE modelling software with Verilog to design the logic circuit.</li>
+        <li>Completion of timing diagrams to validate logic.</li>
+        <li>Debug 'possible unwanted clear' signal and implementing a 'fix' signal.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Results</h3>
+      <ul>
+        <li>Verilog test harness confirmed a successful MIDI serial-to-parallel reciever.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="figure-row">
+    <figure>
+      <img src="midi.png" alt="Final Prototype" style="width: 120%; max-height: 750px; object-fit: contain;">
+      <figcaption>Logic for the reciever.</figcaption>
+    </figure>
+
+  </div>
+
+</body>
+</html>
